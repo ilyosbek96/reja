@@ -1,0 +1,326 @@
+<!-- <div>HELLO WORLD YOU ARE IN AUTHORS!</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1_1">
+              <img
+                src="/author/images/Profile (1).svg"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1_2"><%=user.name%></div>
+            <div class="left_1_3"><%=user.profession%></div>
+            <div class="left-icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/dribbble.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/facebook.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/instagram.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/linkedin.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/twitter.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="/author/images/youtube.svg" class="icon-1" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+
+          <div class="left_2">
+            <div class="left_2_1">
+              <div class="info">Age:</div>
+              <div><%=user.age%></div>
+            </div>
+            <div class="left_2_1">
+              <div class="info">Residence:</div>
+              <div><%=user.residence%></div>
+            </div>
+            <div class="left_2_1">
+              <div class="info">Freelance:</div>
+              <div style="color: rgb(60, 156, 60)">Available</div>
+            </div>
+            <div class="left_2_1">
+              <div class="info">Address:</div>
+              <div><%=user.address%></div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+
+          <div class="left_3">
+            <div style="margin-bottom: 15px; font-weight: bolder">
+              Languages
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[0]%></div>
+              <div>100%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[1]%></div>
+              <div>80%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[2]%></div>
+              <div>60%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+
+          <div class="left_4">
+            <div style="margin-bottom: 15px; font-weight: bolder">Skills</div>
+            <div class="left_4_skill">
+              <div><%=user.skills[0]%></div>
+              <div>90%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[1]%></div>
+              <div>85%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[2]%></div>
+              <div>80%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[3]%></div>
+              <div>75%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[4]%></div>
+              <div>85%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+
+          <div class="left_5">
+            <div style="margin-bottom: 15px; font-weight: bolder">
+              Extra Skills
+            </div>
+            <div class="left_5_extra">
+              <img src="/author/images/icons.svg" style="margin-right: 8px" />
+              <div><%=user.extra_skills[0]%></div>
+            </div>
+            <div class="left_5_extra">
+              <img src="/author/images/icons.svg" style="margin-right: 8px" />
+              <div><%=user.extra_skills[1]%></div>
+            </div>
+            <div class="left_5_extra">
+              <img src="/author/images/icons.svg" style="margin-right: 8px" />
+              <div><%=user.extra_skills[2]%></div>
+            </div>
+            <div class="left_5_extra">
+              <img src="/author/images/icons.svg" style="margin-right: 8px" />
+              <div><%=user.extra_skills[3]%></div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+        </div>
+
+        <div class="midd_frame">
+          <div class="midd_1">
+            <div class="midd_1_1">
+              <div class="midd_1_1_text1">
+                Doctor neurologists in OHSU Hospital
+              </div>
+              <div class="midd_1_1_text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.
+              </div>
+              <button class="button">HIRE ME &gt;</button>
+              <div class="midd_absalyut1"></div>
+              <div class="midd_absalyut2"></div>
+              <div class="midd_absalyut3"></div>
+              <div class="midd_absalyut4"></div>
+              <div class="midd_absalyut5"></div>
+              <div class="midd_absalyut6"></div>
+              <div class="midd_absalyut7"></div>
+            </div>
+
+            <div>
+              <img
+                class="profile_big"
+                src="/author/images/Your Image 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="midd_2">
+            <div class="midd_2_1">My Services</div>
+            <div class="midd_2_2"><%=user.service_desc%></div>
+            <div class="midd_2_3">
+              <div class="midd_2_3_template">
+                <img
+                  class="service_image"
+                  src="/author/images/web-icon.svg"
+                  alt=""
+                />
+                <div class="service_name">Web Development</div>
+                <div class="service_name_detail">Blog, E-Commerce</div>
+              </div>
+
+              <div class="midd_2_3_template">
+                <img
+                  class="service_image"
+                  src="/author/images/ux-icon.svg"
+                  alt=""
+                />
+                <div class="service_name">UI/UX Design</div>
+                <div class="service_name_detail">
+                  Mobile App, Website Design
+                </div>
+              </div>
+
+              <div class="midd_2_3_template">
+                <img
+                  class="service_image"
+                  src="/author/images/sound-icon.svg"
+                  alt=""
+                />
+                <div class="service_name">Sound Design</div>
+                <div class="service_name_detail">Voice Over, Beat Making</div>
+              </div>
+            </div>
+
+            <div class="midd_2_3">
+              <div class="midd_2_3_template">
+                <img
+                  class="service_image"
+                  src="/author/images/game-icon.svg"
+                  alt=""
+                />
+                <div class="service_name">Game Design</div>
+                <div class="service_name_detail">
+                  Character Design, Props & Objects
+                </div>
+              </div>
+
+              <div class="midd_2_3_template">
+                <img
+                  class="service_image"
+                  src="/author/images/photograph-icon.svg"
+                  alt=""
+                />
+                <div class="service_name">Photography</div>
+                <div class="service_name_detail">
+                  Portrait, Product Photography
+                </div>
+              </div>
+
+              <div class="midd_2_3_template">
+                <div class="advertising">Advertising</div>
+                <div class="advertising_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium animi consequatur a consequuntur inventore dolore.
+                </div>
+                <div>
+                  <a href="www.google.com" class="order">ORDER NOW ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right_frame">
+          <button class="contrast">
+            <img src="/author/images/Icons_Contrast.svg" alt="" />
+          </button>
+          <div class="home_tooltip">
+            <div class="tooltip">Home</div>
+            <div class="home_icon">
+              <img src="/author/images/Icons_Home.svg" alt="" />
+            </div>
+          </div>
+          <button class="btn_icons">
+            <img src="/author/images/file-code.svg" alt="" />
+          </button>
+          <button class="btn_icons">
+            <img src="/author/images/Icons_CV.svg" alt="" />
+          </button>
+          <button class="btn_icons">
+            <img src="/author/images/Vector.png" alt="" />
+          </button>
+          <button class="btn_icons">
+            <img src="/author/images/Icons_Blog.svg" alt="" />
+          </button>
+          <button class="btn_icons">
+            <img src="/author/images/Icons_Contact.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
