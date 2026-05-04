@@ -171,3 +171,13 @@ shop.qoldik();
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldik();
+
+
+//================================================================= MITASK-D ==================================================
+console.log("======================MITASK-D======================");
+function checkContent(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
+}
+
+// Test
+console.log(checkContent("mitgroup", "gmtiprou")); // true

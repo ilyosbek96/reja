@@ -13,9 +13,10 @@
   "author": "ilyosbekneo",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.16.0",
     "ejs": "^5.0.2",
     "express": "^5.2.1",
-    "module": "^2.0.0",
+    
     "modules": "^0.4.0",
     "mongodb": "^3.2.6",
     "nodemon": "^3.1.14"
