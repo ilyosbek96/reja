@@ -175,9 +175,31 @@ shop.qoldik();
 
 //================================================================= MITASK-D ==================================================
 console.log("======================MITASK-D======================");
-function checkContent(a, b) {
-  return a.split("").sort().join("") === b.split("").sort().join("");
+function checkContent(str1, str2) {
+  if (str1.length !== str2.length) return false;
+
+  
+  let count1 = {};
+  let count2 = {};
+
+  for (let ch of str1) {
+    count1[ch] = (count1[ch] || 0) + 1;
+  }
+
+  for (let ch of str2) {
+    count2[ch] = (count2[ch] || 0) + 1;
+  }
+
+  //  solishtirish
+  for (let key in count1) {
+    if (count1[key] !== count2[key]) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
-// Test
 console.log(checkContent("mitgroup", "gmtiprou")); // true
+console.log(checkContent("hello", "olelh"));       // true
+console.log(checkContent("abc", "abd"));           // false
