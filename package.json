@@ -13,7 +13,6 @@
   "author": "ilyosbekneo",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.16.0",
     "ejs": "^5.0.2",
     "express": "^5.2.1",
     "modules": "^0.4.0",
