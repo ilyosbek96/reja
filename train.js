@@ -203,3 +203,20 @@ function checkContent(str1, str2) {
 console.log(checkContent("mitgroup", "gmtiprou")); // true
 console.log(checkContent("hello", "olelh"));       // true
 console.log(checkContent("abc", "abd"));           // false
+
+//================================================================= MITASK-D ==================================================
+console.log("======================MITASK-E======================");
+
+
+function getReverse(b) {
+  if (typeof b !== "string") {
+    return "error";
+
+    // return err
+  } else {
+    return b.split("").reverse().join("");
+  }
+}
+
+console.log(getReverse("alisher"));
+console.log(getReverse("mitgroup"));
