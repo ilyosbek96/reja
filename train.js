@@ -220,3 +220,19 @@ function getReverse(b) {
 
 console.log(getReverse("alisher"));
 console.log(getReverse("mitgroup"));
+
+// // //============================ MITASK-F==================================//
+console.log("======================MITASK-F======================");
+function findDpublers(str) {
+  for (let i = 0;
+    i < str.length;
+    i++
+  ) {
+    if (i !== str.lastIndexOf(str[i])) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(findDpublers("hello"));
+console.log(findDpublers("helo"));
