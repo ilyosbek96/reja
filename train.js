@@ -236,3 +236,25 @@ function findDpublers(str) {
 }
 console.log(findDpublers("hello"));
 console.log(findDpublers("helo"));
+
+// // //============================ MITASK-G ==================================//
+console.log("====================== MITASK-G ======================");
+function getHighestIndex(arr) {
+
+  let max = arr[0]
+  let index = 0
+
+  for (let d = 0; d < arr.length; d++) {
+
+    if (arr[d] > max) {
+
+      max = arr[d]
+      index = d 
+
+    }
+  }
+
+  return index
+}
+
+console.log(getHighestIndex([5, 21, 17, 8]))
