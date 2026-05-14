@@ -258,3 +258,24 @@ function getHighestIndex(arr) {
 }
 
 console.log(getHighestIndex([5, 21, 17, 8]))
+// // //============================ MITASK-H ==================================//
+console.log("====================== MITASK-H ======================");
+// define
+function getPositive(arr) {
+  if (!Array.isArray(arr)) {
+    return "insert number";
+  }
+  let count = arr.filter((arr) => arr > 0);
+  if (count) {
+    return count.join("");
+  }
+}
+
+// call
+const casePositive = getPositive([5, -6, 4, 2]);
+console.log("casePositive", casePositive);
+
+// ======  testing 2 ======
+
+const casePositive2 = getPositive([5, -6, 4, 7, -9, 10]);
+console.log("casePositive", casePositive2);
