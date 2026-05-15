@@ -275,7 +275,29 @@ function getPositive(arr) {
 const casePositive = getPositive([5, -6, 4, 2]);
 console.log("casePositive", casePositive);
 
-// ======  testing 2 ======
-
 const casePositive2 = getPositive([5, -6, 4, 7, -9, 10]);
 console.log("casePositive", casePositive2);
+
+// // //============================ MITASK-I ==================================//
+console.log("====================== MITASK-I ======================");
+function majorityElement(arr) {
+  const counts = new Map();
+
+  arr.forEach(num => {
+    counts.set(num, (counts.get(num) || 0) + 1);
+  });
+
+  let majority = arr[0];
+  let maxCount = 0;
+
+  counts.forEach((count, num) => {
+    if (count > maxCount) {
+      maxCount = count;
+      majority = num;
+    }
+  });
+
+  return majority;
+}
+
+console.log(majorityElement([1,2,3,4,5,4,3,4])); // 4
