@@ -301,3 +301,20 @@ function majorityElement(arr) {
 }
 
 console.log(majorityElement([1,2,3,4,5,4,3,4])); // 4
+// // //============================ MITASK-J ==================================//
+console.log("====================== MITASK-J ======================");
+function findLongestWord(str) {
+    let words = str.split(" ");
+    let longestWord = "";
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+
+    return longestWord;
+}
+
+
+console.log(findLongestWord("I come from Uzbekistan"));
