@@ -318,3 +318,19 @@ function findLongestWord(str) {
 
 
 console.log(findLongestWord("I come from Uzbekistan"));
+// // //============================ MITASK-K ==================================//
+console.log("====================== MITASK-K ======================");
+function countVowels(str) {
+    let vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("string"));
